@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.IntroActivity">
+
+   <ImageView
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:src="@drawable/ic_task_image" />
+   <TextView
+       android:padding="10dp"
+       android:layout_marginTop="30dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textColor="@color/primary_text_colour"
+      android:text="Hey Guys , this app is made for managing tasks, u can login or signup via google account"
+       android:gravity="center"/>
+
+
+   <TextView
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:layout_marginBottom="20dp"
+       android:layout_marginTop="30dp"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:background="@drawable/shape_button_rounded"
+       android:foreground="?attr/selectableItemBackground"
+       android:text="Login"
+       android:textColor="@color/white"
+       android:textSize="25sp"
+       android:textStyle="bold|italic"
+       android:gravity="center"
+       android:clickable="true"
+       android:onClick="loginclicked"
+       />
+   <TextView
+       android:textColor="@color/primary_text_colour"
+       android:onClick="signupclicked"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:background="@drawable/white_border_shape_button_rounded"
+       android:foreground="?attr/selectableItemBackground"
+       android:text="Sign Up"
+       android:textSize="25sp"
+       android:textStyle="bold|italic"
+       android:gravity="center"
+       android:clickable="true"
+       />
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/signupbg"
+    android:layout_height="match_parent"
+    tools:context=".activities.SigninActivity">
+
+    <!--<androidx.appcompat.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" /> -->
+
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Enter Your details to sign in to our app" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp">
+
+            <LinearLayout
+                android:background="#D4E6F4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <EditText
+                    android:textColorHint="@color/secondary_text_colour"
+                    android:textColor="@color/primary_text_colour"
+                    android:layout_margin="10dp"
+                    android:id="@+id/et_mail_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:hint="Enter Email Addresss"/>
+
+
+                <EditText
+                    android:textColorHint="@color/secondary_text_colour"
+                    android:textColor="@color/primary_text_colour"
+                    android:hint="Enter Password"
+                    android:layout_margin="10dp"
+                    android:id="@+id/et_pass_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword" >
+
+                </EditText>
+
+
+
+                <Button
+                    android:textColor="@color/white"
+                    android:onClick="signinclicked"
+                    android:layout_margin="30dp"
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Signin" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
